@@ -1,0 +1,28 @@
+
+.notification {
+    background-color: tomato;
+    width: 25px;
+    height: 25px;
+    /* display: block; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+
+}
+
+
+.gear-notification{
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: absolute;
+    right: 18px;
+    top: 55px; 
+}
