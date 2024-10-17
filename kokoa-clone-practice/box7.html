@@ -1,0 +1,144 @@
+<!-- tag attribute-->
+<!DOCTYPE html> <!--This is the rule, every first line-->
+<html lang = "en">
+    <head>
+        <!--margin border padding
+        margin is space from the border of the box to the outside
+        padding is space from the border of the box to the inside
+        -->
+
+        <title>The Tae Times</title>
+        <!-- <style> this is for css in HTML </style> - internal css -->
+        <style>
+            :root {
+                --main-color: #fcce00;
+                --default-border: 1px solid var(var(--main-color))
+            }
+
+            body {
+                height: 1000vh;
+                margin: 50px;
+            }
+
+            span{
+                /* color: tomato; */
+                background-color: yellowgreen;
+                padding: 5px;
+                border-radius: 10px;
+            }
+
+            /* father - childeren  */
+            p span{
+                color: white;
+            }
+
+            /* father - direct children */
+            div > span{
+                text-decoration: underline;
+            }
+
+            /*brother - direct brother*/
+            p + span{
+                text-decoration: overline;
+            }
+ 
+            /*brother and brother*/
+            p ~ span{
+                text-decoration: overline;
+            }
+
+
+            input{
+                border:1px solid wheat; 
+            }
+            input:required {
+                border-color: tomato;
+            }
+            input[type="password"]:focus{
+                background-color: teal;
+                opacity: 0.2;
+            }
+            input[placeholder~="name"]{
+                background-color: thistle;
+            }
+
+            button:hover{
+                background-color: tomato;
+            }
+
+            a:visited{
+                color: blueviolet;
+            }
+            a:hover{
+                color: teal;
+            }
+            a:focus{
+                color:turquoise;
+            }
+
+            form {
+                border: 1px solid salmon;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+
+            }
+            /* form:focus-within{
+                border-color: seagreen;
+            } */
+
+            form:hover input:focus{
+                background-color: sienna;
+            }
+
+            input::placeholder{
+                color:yellowgreen;
+            }
+
+            p::selection{
+                background-color: fuchsia;
+            }
+
+            p:active{
+                color: #fcce00; 
+                color: rgb(252, 206, 0);
+                color: rgba(252, 207, 0, 0.5);
+                background-color: var(--default-border);
+                font-size: 50px;
+                /* background-color: blue; */
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <span>hello</span> 
+            <p>
+                Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question.
+                <span>inside</span>
+            </p>
+            <address>hi</address>
+            <span>hello</span>
+            <p></p>
+            <form>
+                <!-- <input type="text" placeholder="username" /> -->
+                <input type="text" placeholder="First name" />
+                <input type="text" placeholder="Last name" />
+                <input type="password" placeholder="password" required/>
+            </form>
+
+            <button>hello</button>
+
+            <a href="https://apple.com">Go to apple</a>
+
+            <form>
+                <input type="text" name="" id=""/>
+                <input type="text" name="" id=""/>
+                <input type="text" name="" id=""/>
+            </form>
+        </div>
+    </body>
+
+</html>
+

@@ -1,0 +1,14 @@
+/* selector  */
+/* blueTitle {
+    makecolorblue
+    24pxfontsize
+} */
+
+body {
+    /* color: red; */
+    background-color: rosybrown;
+}
+
+h1{
+    color: teal;
+}

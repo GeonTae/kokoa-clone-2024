@@ -1,0 +1,66 @@
+<!-- tag attribute-->
+<!DOCTYPE html> <!--This is the rule, every first line-->
+<html lang = "en">
+    <head>
+        <!--margin border padding
+        margin is space from the border of the box to the outside
+        padding is space from the border of the box to the inside
+        -->
+
+        <title>The Tae Times</title>
+        <!-- <style> this is for css in HTML </style> - internal css -->
+        <style>
+
+            body {
+                height: 1000vh;
+                margin: 50px;
+            }
+
+            div{
+                /* position: fixed; */
+                width: 150px;
+                height: 150px;
+                background-color: wheat;
+                position: relative;
+
+            }
+            div:first-child{
+                background-color: tomato;
+            }
+            div:last-child{
+                background-color: teal;
+            }
+            span{
+                background-color: tomato;
+            }
+            /* span:nth-child(even){
+                background-color: teal;
+            } */
+            span:nth-child(3n+1){
+                background-color: teal;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- <div id="green"></div>
+        <div id="different"></div> -->
+        <!-- <div></div>
+        <div></div>
+        <div></div>
+        <div></div> 
+        <div></div> -->
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+    </body>
+
+</html>
+
