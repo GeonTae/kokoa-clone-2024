@@ -1,38 +1,15 @@
 .welcome-header {
   margin: 90px 0px;
-  /* display: flex; */
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .welcome-header__title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 25px;
 }
-
-.welcome-header__img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.welcome-header__bubble-box {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-30px);
-}
-
-.welcome-header__img-container i {
-  font-size: 100px;
-}
-
 .welcome-header__text {
-  margin-top: 25px;
   width: 60%;
   opacity: 0.7;
 }
@@ -52,11 +29,11 @@
 
 #login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: border-color 0.5s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 
 #login-form input::placeholder {
-  color: var(--grey-text);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #login-form input:focus {
@@ -64,7 +41,7 @@
 }
 
 #login-form input[type="submit"] {
-  background-color: grey;
+  background-color: var(--yellow);
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px;
@@ -73,10 +50,6 @@
 #login-form a {
   text-align: center;
   text-decoration: none;
-  color: inherit; /*get color from the father */
+  color: inherit;
   font-size: 13px;
-}
-
-#login-form input[type="submit"]:hover {
-  background-color: var(--yellow);
 }
